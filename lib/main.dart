@@ -10,9 +10,10 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'ToMe',
       home: Scaffold(
-        body: Text("hello world"),
+        body: SafeArea(child: Text("hello world")),
       ),
     );
   }
